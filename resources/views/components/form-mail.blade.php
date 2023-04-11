@@ -1,4 +1,4 @@
-<div class="py-20 text-gray-700 bg-gray-100 dark:bg-gray-900 dark:text-gray-300" id="contacto">
+<div class="py-20 text-gray-700 bg-gray-100" id="contacto">
     <h2 class="text-5xl text-center mb-7 ">{{__('Contacto')}}</h2>
     <div class="grid items-center justify-center grid-cols-1 mx-auto sm:grid-cols-2 max-w-7xl sm:px-6 lg:px-8">
       

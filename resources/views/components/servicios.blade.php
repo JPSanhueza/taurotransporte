@@ -4,12 +4,12 @@
       <div class="bg-white rounded-sm shadow-xl p-7 dark:bg-gray-900">
         <img height="300" width="300" class="mx-auto rounded-full" src="{{asset('img/servicios/servicios1.jpg')}}" alt="Desarrollo Web">
         <h3 class="py-3 text-xl font-semibold text-center">{{__('Arriendo de Vehículos de carga')}}</h3>
-        <p>{{__('Explíquenos su idea y lo diseñamos a la medida de su presupuesto y requerimientos')}}.</p>
+        <p>{{__('Texto descriptivo del servicio')}}.</p>
       </div>
       <div class="p-7 bg-white dark:bg-gray-900  rounded-[3px] shadow-xl">
         <img height="300" width="300" class="mx-auto rounded-full" src="{{asset('img/servicios/servicios2.jpg')}}" alt="Maquetacion Web">
         <h3 class="py-3 text-xl font-semibold text-center">{{__('Transporte de carga')}}</h3>
-        <p>{{__('Coméntenos su proyecto Informático y lo analizamos, diseñamos, programamos con las últimas tecnologías web')}}.</p>
+        <p>{{__('Texto descriptivo del servicio')}}.</p>
       </div>       
     </div>          
 </section>

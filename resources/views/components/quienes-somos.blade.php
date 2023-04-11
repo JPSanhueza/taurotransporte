@@ -4,7 +4,7 @@
         <div> 
           <img height="300" width="300" class="mx-auto rounded-md" src="{{asset('img/quienessomos/quienesomos.jpg')}}" alt="Imagen">
         </div>
-        <div class="pl-4">
+        <div class="pt-4 pl-4 sm:pt-2">
             <p>
                 Bienvenidos a Tauro Transporte, una compañía de transporte líder en el Gran Concepción, Chile, que se enorgullece de ofrecer soluciones de transporte eficientes y confiables desde 2014. 
             </p>
@@ -12,7 +12,7 @@
                 Nuestra misión es facilitar el movimiento de personas y bienes en la región, proporcionando un servicio de calidad superior y una experiencia excepcional para nuestros clientes.
             </p>
             <p>
-              Nuestra visión es ser el referente en la industria del transporte en el Gran Concepción, innovando constantemente en nuestros vehiculos y prácticas sostenibles para mejorar la vida de las personas y ayudar a todas las personas con sus pymes y emprendimientos.
+              Nuestra visión es ser el referente en la industria del transporte en el Gran Concepción, innovando constantemente en nuestros vehiculos para mejorar la vida de las personas y ayudar a todas las personas con sus pymes y emprendimientos.
             </p>
         </div>            
       </div>          

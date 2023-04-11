@@ -22,6 +22,9 @@
 
         <div class="min-h-screen bg-gray-100">
             @livewire('navigation-menu')
+             <a class="fixed z-30 bottom-7 right-8 shadow-lime-900" href="https://api.whatsapp.com/send?phone=56950694091" target="_blank" rel="noopener">
+                <img src="{{ asset('/img/layout/whatsapp.png') }}" width="64px" height="64px" alt="icono">        
+            </a> 
 
             <!-- Page Heading -->
             @if (isset($header))

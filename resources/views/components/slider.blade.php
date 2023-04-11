@@ -15,7 +15,7 @@
         <div class="w-full slider__section">
             <picture>
                 <source media="(min-width: 1024px)" srcset="{{asset('img/slider/slider3.jpg')}}"/>
-                <img src="{{asset('img/slider/sliderBuraleo3.jpg')}}" alt="Slider1" class="block object-cover w-full h-full"/>
+                <img src="{{asset('img/slider/slider3.jpg')}}" alt="Slider1" class="block object-cover w-full h-full"/>
             </picture>
         </div>
                              

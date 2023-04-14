@@ -1,5 +1,5 @@
 <div class="w-full m-auto overflow-hidden ">
-    <div class=" h-[50vh] w-[300%] flex ml-[-100%] lg:h-[90vh]" id="slider">            
+    <div class=" h-[50vh] w-[700%] flex ml-[-100%] lg:h-[90vh]" id="slider">            
         <div class="relative w-full slider__section">
             <picture>
                 <source media="(min-width: 1024px)" srcset="{{asset('img/slider/slider1.jpg')}}"/>                  
@@ -15,6 +15,30 @@
         <div class="w-full slider__section">
             <picture>
                 <source media="(min-width: 1024px)" srcset="{{asset('img/slider/slider3.jpg')}}"/>
+                <img src="{{asset('img/slider/slider3.jpg')}}" alt="Slider1" class="block object-cover w-full h-full"/>
+            </picture>
+        </div>
+        <div class="w-full slider__section">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="{{asset('img/slider/slider4.jpg')}}"/>
+                <img src="{{asset('img/slider/slider3.jpg')}}" alt="Slider1" class="block object-cover w-full h-full"/>
+            </picture>
+        </div>
+        <div class="w-full slider__section">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="{{asset('img/slider/slider5.jpg')}}"/>
+                <img src="{{asset('img/slider/slider3.jpg')}}" alt="Slider1" class="block object-cover w-full h-full"/>
+            </picture>
+        </div>
+        <div class="w-full slider__section">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="{{asset('img/slider/slider6.jpg')}}"/>
+                <img src="{{asset('img/slider/slider3.jpg')}}" alt="Slider1" class="block object-cover w-full h-full"/>
+            </picture>
+        </div>
+         <div class="w-full slider__section">
+            <picture>
+                <source media="(min-width: 1024px)" srcset="{{asset('img/slider/slider7.jpg')}}"/>
                 <img src="{{asset('img/slider/slider3.jpg')}}" alt="Slider1" class="block object-cover w-full h-full"/>
             </picture>
         </div>

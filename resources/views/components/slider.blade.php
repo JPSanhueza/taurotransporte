@@ -21,25 +21,25 @@
         <div class="w-full slider__section">
             <picture>
                 <source media="(min-width: 1024px)" srcset="{{asset('img/slider/slider4.jpg')}}"/>
-                <img src="{{asset('img/slider/slider3.jpg')}}" alt="Slider1" class="block object-cover w-full h-full"/>
+                <img src="{{asset('img/slider/slider4.jpg')}}" alt="Slider1" class="block object-cover w-full h-full"/>
             </picture>
         </div>
         <div class="w-full slider__section">
             <picture>
                 <source media="(min-width: 1024px)" srcset="{{asset('img/slider/slider5.jpg')}}"/>
-                <img src="{{asset('img/slider/slider3.jpg')}}" alt="Slider1" class="block object-cover w-full h-full"/>
+                <img src="{{asset('img/slider/slider5.jpg')}}" alt="Slider1" class="block object-cover w-full h-full"/>
             </picture>
         </div>
         <div class="w-full slider__section">
             <picture>
                 <source media="(min-width: 1024px)" srcset="{{asset('img/slider/slider6.jpg')}}"/>
-                <img src="{{asset('img/slider/slider3.jpg')}}" alt="Slider1" class="block object-cover w-full h-full"/>
+                <img src="{{asset('img/slider/slider6.jpg')}}" alt="Slider1" class="block object-cover w-full h-full"/>
             </picture>
         </div>
          <div class="w-full slider__section">
             <picture>
                 <source media="(min-width: 1024px)" srcset="{{asset('img/slider/slider7.jpg')}}"/>
-                <img src="{{asset('img/slider/slider3.jpg')}}" alt="Slider1" class="block object-cover w-full h-full"/>
+                <img src="{{asset('img/slider/slider7.jpg')}}" alt="Slider1" class="block object-cover w-full h-full"/>
             </picture>
         </div>
                              

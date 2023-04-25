@@ -1,34 +1,39 @@
 <div>
-    <section class="w-full max-w-md mx-auto mt-10">
-        {{-- <h1 class="mb-4 text-xl font-bold">Formulario de contacto</h1> --}}
 
-        @if (session()->has('success'))
-            <div class="relative px-4 py-3 mb-4 text-green-700 bg-green-100 border border-green-400 rounded" role="alert">
-                <span class="block sm:inline">{{ session('success') }}</span>
-            </div>
-        @endif
 
-        <form wire:submit.prevent="submitForm">
-            <div class="mb-4">
-                <label class="block mb-2 text-sm font-bold text-gray-700" for="name">Nombre:</label>
-                <input class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="name" type="text" wire:model="name">
-                @error('name') <span class="text-xs text-red-500">{{ $message }}</span> @enderror
+<div class="p-6 bg-gray-100 shadow-xl">
+    <form wire:submit.prevent="submit">
+        @csrf
+        <label class="text-xs text-gray-700 uppercase dark:text-gray-100" for="name">{{__('Nombre')}}</label>
+        <span class="text-xs text-red-600 "> @error ('nombre') {{$message}}  @enderror</span>
+        <input wire:model="nombre" type="text" id="name" name="nombre" class="w-full mb-4 border-gray-200 rounded" value="{{old('nombre')}}">
+
+        <label class="text-xs text-gray-700 uppercase dark:text-gray-100" for="email">Email</label>
+        <span class="text-xs text-red-600 "> @error ('email') {{$message}}  @enderror</span>
+        <input wire:model="email" type="text" id="email" name="email" class="w-full mb-4 border-gray-200 rounded" value="{{old('email')}}">
+
+        <label class="text-xs text-gray-700 uppercase dark:text-gray-100" for="msg">{{__('Mensaje')}}</label>
+        <span class="text-xs text-red-600 "> @error ('msg') {{$message}}  @enderror</span>
+        <textarea wire:model="msg" id="msg" name="msg" class="w-full mb-4 border-gray-200 rounded" id="" cols="30" rows="5"></textarea>
+        <div class="text-center">
+            <input type="submit" value="{{__('Enviar')}}" class="px-7 py-2 text-white font-semibold bg-gray-800 hover:bg-[#ed5826] rounded cursor-pointer">
+        </div>
+        @if (session()->has('message'))
+            <div x-data="{ isVisible: true}"
+                 x-init="
+                    setTimeout(()=>{
+                        isVisible=false
+                    },3000)
+                 "
+                 x-show.transition.duration.1000ms="isVisible"
+                class="text-green-900">
+                {{ session('message') }}
             </div>
-            <div class="mb-4">
-                <label class="block mb-2 text-sm font-bold text-gray-700" for="email">Email:</label>
-                <input class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="email" type="email" wire:model="email">
-                @error('email') <span class="text-xs text-red-500">{{ $message }}</span> @enderror
-            </div>
-            <div class="mb-6">
-                <label class="block mb-2 text-sm font-bold text-gray-700" for="message">Mensaje:</label>
-                <textarea class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="message" wire:model="message" rows="4"></textarea>
-                @error('message') <span class="text-xs text-red-500">{{ $message }}</span> @enderror
-            </div>
-            <div class="flex items-center justify-between">
-                <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline" type="submit">
-                    Enviar
-                </button>
-            </div>
-        </form>
-    </section>
+            @endif
+    </form>
+
 </div>
+</div>
+
+
+

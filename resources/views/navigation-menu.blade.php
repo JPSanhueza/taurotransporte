@@ -27,6 +27,9 @@
                     <x-nav-link href="{{ route('welcome') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Contacto') }}
                     </x-nav-link>
+                    <x-nav-link href="{{ route('norte') }}" :active="request()->routeIs('dashboard')">
+                        {{ __('Norte') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -164,8 +167,11 @@
              <x-responsive-nav-link href="{{ route('welcome') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Contacto') }}
             </x-responsive-nav-link>
-        </div>
+            <x-responsive-nav-link href="{{ route('welcome') }}" :active="request()->routeIs('dashboard')">
+                {{ __('Norte') }}
+            </x-responsive-nav-link>
+       </div>
 
-      
+
     </div>
 </nav>

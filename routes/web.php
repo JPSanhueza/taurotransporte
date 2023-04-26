@@ -17,7 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Route::middleware([
+
+Route::get('/norte', function () {
+    return view('norte');
+})->name('norte');
+
+    Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'

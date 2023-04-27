@@ -5,9 +5,9 @@
 </head>
 <body>
     <h1>Nuevo mensaje de contacto</h1>
-    <p>Nombre: {{ $nombre }}</p>
-    <p>Email: {{ $email }}</p>
+    <p>Nombre: {{ $data['nombre'] }}</p>
+    <p>Email: {{ $data['email'] }}</p>
     <p>Mensaje:</p>
-    <p>{{ $mensaje}}</p>
+    <p>{{ $data['mensaje']}}</p>
 </body>
 </html>

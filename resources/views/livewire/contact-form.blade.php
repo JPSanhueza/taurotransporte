@@ -12,9 +12,9 @@
         <span class="text-xs text-red-600 "> @error ('email') {{$message}}  @enderror</span>
         <input wire:model="email" type="text" id="email" name="email" class="w-full mb-4 border-gray-200 rounded" value="{{old('email')}}">
 
-        <label class="text-xs text-gray-700 uppercase " for="msg">{{__('Mensaje')}}</label>
-        <span class="text-xs text-red-600 "> @error ('msg') {{$message}}  @enderror</span>
-        <textarea wire:model="msg" id="msg" name="msg" class="w-full mb-4 border-gray-200 rounded" id="" cols="30" rows="5"></textarea>
+        <label class="text-xs text-gray-700 uppercase " for="mensaje">{{__('Mensaje')}}</label>
+        <span class="text-xs text-red-600 "> @error ('mensaje') {{$message}}  @enderror</span>
+        <textarea wire:model="mensaje" id="mensaje" name="mensaje" class="w-full mb-4 border-gray-200 rounded" id="" cols="30" rows="5"></textarea>
         <div class="text-center">
             <input type="submit" value="{{__('Enviar')}}" class="px-7 py-2 text-white font-semibold bg-gray-800 hover:bg-[#ed5826] rounded cursor-pointer">
         </div>

@@ -8,24 +8,24 @@ use App\Mail\ContactFormMail;
 
 class ContactForm extends Component
 {
-    public $name;
+    public $nombre;
     public $email;
-    public $message;
+    public $mensaje;
 
     protected $rules = [
-        'name' => 'required|min:3',
+        'nombre' => 'required|min:3',
         'email' => 'required|email',
-        'message' => 'required|min:5',
+        'mensaje' => 'required|min:5',
     ];
 
-    public function submitForm()
+    public function submit()
     {
         $this->validate();
 
         Mail::to('contacto@taurotransporte.cl')->send(new ContactFormMail([
-            'name' => $this->name,
+            'nombre' => $this->name,
             'email' => $this->email,
-            'message' => $this->message,
+            'mensaje' => $this->message,
         ]));
 
         session()->flash('success', 'Mensaje enviado correctamente.');

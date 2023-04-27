@@ -23,9 +23,9 @@ class ContactForm extends Component
         $this->validate();
 
         Mail::to('contacto@taurotransporte.cl')->send(new ContactFormMail([
-            'nombre' => $this->name,
+            'nombre' => $this->nombre,
             'email' => $this->email,
-            'mensaje' => $this->message,
+            'mensaje' => $this->mensaje,
         ]));
 
         session()->flash('success', 'Mensaje enviado correctamente.');

@@ -21,10 +21,10 @@
                     <x-nav-link href="{{ url('/#servicios') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Servicios') }}
                     </x-nav-link>
-                    <x-nav-link href="{{ route('welcome') }}" :active="request()->routeIs('dashboard')">
+                    <x-nav-link href="{{ url('/#vehiculos') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Automóviles') }}
                     </x-nav-link>
-                    <x-nav-link href="{{ route('welcome') }}" :active="request()->routeIs('dashboard')">
+                    <x-nav-link href="{{ url('/#contacto') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Contacto') }}
                     </x-nav-link>
                     <x-nav-link href="{{ route('norte') }}" :active="request()->routeIs('dashboard')">
@@ -57,13 +57,13 @@
              <x-responsive-nav-link href="{{ url('/#servicios') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Servicios') }}
             </x-responsive-nav-link>
-             <x-responsive-nav-link href="{{ route('welcome') }}" :active="request()->routeIs('dashboard')">
+             <x-responsive-nav-link href="{{ url('/#vehiculos') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Automóviles') }}
             </x-responsive-nav-link>
-             <x-responsive-nav-link href="{{ route('welcome') }}" :active="request()->routeIs('dashboard')">
+             <x-responsive-nav-link href="{{ url('/#contacto') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Contacto') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link href="{{ route('welcome') }}" :active="request()->routeIs('dashboard')">
+            <x-responsive-nav-link href="{{ route('norte') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Maquinarias Norte') }}
             </x-responsive-nav-link>
        </div>

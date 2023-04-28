@@ -41,6 +41,15 @@
                         </p>
                 </div>
         </div>
+        <div class="max-w-sm mx-auto mt-10 overflow-hidden rounded shadow-lg bg-white">
+            <img class="object-cover w-full h-56" src="{{asset('img/norte/servicios/servicio_norte.jpg')}}" alt="Imagen de ejemplo">
+                <div class="px-6 py-4">
+                    <div class="mb-2 text-xl font-bold">Alojamiento trabajadores</div>
+                        <p class="text-base text-gray-700">
+                        Alojamiento con capacidad de 14 a 18 trabajadores, 5 estacionamientos.
+                    </p>
+                </div>
+        </div>
     </div>
 
     <x-footer/>

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="icon" type="image/png" sizes="32x32" href="{{asset('img/layout/favicon.png')}}">
+        <meta name="description" content="Tauro Transporte - Arriendo de vehículos particulares y de carga"/>
 
         <title>Arriendo de vehículos y transporte de carga</title>
 
